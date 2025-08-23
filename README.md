@@ -1,2 +1,2 @@
-To run the backend:
-    uv run uvicorn BackendCreator:app --reload
+To run the application:
+    uv run uvicorn main:app --reload

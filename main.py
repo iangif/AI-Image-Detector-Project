@@ -1,6 +1,6 @@
-def main():
-    print("Hello from ai-image-detector-project!")
+from fastapi import FastAPI
+from backend.app.controller.AnalyzerController import router
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
+app.include_router(router, prefix="/api")
